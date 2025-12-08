@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react';
-import { useTranslation } from '../lib/i18n';
+import { useTranslation } from '../lib/i18n.tsx';
 
 interface BeforeAfterPreviewProps {
   originalImage: string;
@@ -18,8 +18,8 @@ export default function BeforeAfterPreview({ originalImage, processedImage }: Be
         <button
           onClick={() => setShowOriginal(false)}
           className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${!showOriginal
-              ? 'bg-primary text-white shadow-lg'
-              : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+            ? 'bg-primary text-white shadow-lg'
+            : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
             }`}
         >
           {t('preview.after')}
@@ -27,8 +27,8 @@ export default function BeforeAfterPreview({ originalImage, processedImage }: Be
         <button
           onClick={() => setShowOriginal(true)}
           className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${showOriginal
-              ? 'bg-primary text-white shadow-lg'
-              : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+            ? 'bg-primary text-white shadow-lg'
+            : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
             }`}
         >
           {t('preview.before')}

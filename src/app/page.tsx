@@ -1,16 +1,16 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { I18nProvider, useTranslation } from '../lib/i18n'
-import Header from '../components/Header'
-import ThemeToggle from '../components/ThemeToggle'
-import UploadZone from '../components/UploadZone'
-import ProcessingSpinner from '../components/ProcessingSpinner'
-import BeforeAfterPreview from '../components/BeforeAfterPreview'
-import DownloadButton from '../components/DownloadButton'
-import About from '../components/About'
-import FAQ from '../components/FAQ'
-import Footer from '../components/Footer'
+import { I18nProvider, useTranslation } from '../lib/i18n.tsx'
+import Header from '../components/Header.tsx'
+import ThemeToggle from '../components/ThemeToggle.tsx'
+import UploadZone from '../components/UploadZone.tsx'
+import ProcessingSpinner from '../components/ProcessingSpinner.tsx'
+import BeforeAfterPreview from '../components/BeforeAfterPreview.tsx'
+import DownloadButton from '../components/DownloadButton.tsx'
+import About from '../components/About.tsx'
+import FAQ from '../components/FAQ.tsx'
+import Footer from '../components/Footer.tsx'
 
 function AppContent() {
     const { t } = useTranslation()

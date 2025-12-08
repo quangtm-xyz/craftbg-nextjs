@@ -1,7 +1,7 @@
 'use client'
 
-import { useTranslation } from '../lib/i18n';
-import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from '../lib/i18n.tsx';
+import LanguageSwitcher from './LanguageSwitcher.tsx';
 
 export default function Header() {
   const { t } = useTranslation();

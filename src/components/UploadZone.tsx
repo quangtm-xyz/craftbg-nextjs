@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useRef } from 'react';
-import { removeBackground } from '../lib/api';
-import { useTranslation } from '../lib/i18n';
+import { removeBackground } from '../lib/api.ts';
+import { useTranslation } from '../lib/i18n.tsx';
 
 interface UploadZoneProps {
   setOriginalImage: (image: string) => void;
