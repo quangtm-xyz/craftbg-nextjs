@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react';
-import { useTranslation, languages, Language } from '../lib/i18n.tsx';
+import { useTranslation, languages, Language } from '../lib/i18n';
 
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useTranslation();

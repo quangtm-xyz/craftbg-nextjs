@@ -1,16 +1,16 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { I18nProvider, useTranslation } from '../lib/i18n.tsx'
-import Header from '../components/Header.tsx'
-import ThemeToggle from '../components/ThemeToggle.tsx'
-import UploadZone from '../components/UploadZone.tsx'
-import ProcessingSpinner from '../components/ProcessingSpinner.tsx'
-import BeforeAfterPreview from '../components/BeforeAfterPreview.tsx'
-import DownloadButton from '../components/DownloadButton.tsx'
-import About from '../components/About.tsx'
-import FAQ from '../components/FAQ.tsx'
-import Footer from '../components/Footer.tsx'
+import { I18nProvider, useTranslation } from '../lib/i18n'
+import Header from '../components/Header'
+import ThemeToggle from '../components/ThemeToggle'
+import UploadZone from '../components/UploadZone'
+import ProcessingSpinner from '../components/ProcessingSpinner'
+import BeforeAfterPreview from '../components/BeforeAfterPreview'
+import DownloadButton from '../components/DownloadButton'
+import About from '../components/About'
+import FAQ from '../components/FAQ'
+import Footer from '../components/Footer'
 
 function AppContent() {
     const { t } = useTranslation()
@@ -39,14 +39,6 @@ function AppContent() {
             <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
             <Header />
 
-            {/* ADS SLOT 1 - Top Banner */}
-            <div className="max-w-7xl mx-auto px-4 py-4">
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-                    {/* ADS HERE */}
-                    <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-                </div>
-            </div>
-
             <main className="max-w-7xl mx-auto px-4 py-8">
                 {!originalImage && !isProcessing && (
                     <>
@@ -56,12 +48,6 @@ function AppContent() {
                             setIsProcessing={setIsProcessing}
                             setError={setError}
                         />
-
-                        {/* ADS SLOT 2 - Below Upload */}
-                        <div className="mt-8 bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-                            {/* ADS HERE */}
-                            <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-                        </div>
                     </>
                 )}
 
@@ -86,12 +72,6 @@ function AppContent() {
                             processedImage={processedImage}
                         />
 
-                        {/* ADS SLOT 3 - Between Preview and Download */}
-                        <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-                            {/* ADS HERE */}
-                            <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-                        </div>
-
                         <DownloadButton processedImage={processedImage} />
 
                         <button
@@ -102,12 +82,6 @@ function AppContent() {
                         </button>
                     </div>
                 )}
-
-                {/* ADS SLOT 4 - Bottom */}
-                <div className="mt-8 bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-                    {/* ADS HERE */}
-                    <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-                </div>
 
                 {/* Features Section */}
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">

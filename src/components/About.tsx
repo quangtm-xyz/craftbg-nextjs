@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslation } from '../lib/i18n.tsx';
+import { useTranslation } from '../lib/i18n';
 
 function About() {
   const { t } = useTranslation();

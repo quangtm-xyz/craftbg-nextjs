@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useTranslation } from '../lib/i18n.tsx'
+import { useTranslation } from '../lib/i18n'
 
 function FAQ() {
   const { t } = useTranslation()

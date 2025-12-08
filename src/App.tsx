@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { I18nProvider, useTranslation } from './lib/i18n.tsx'
+import { I18nProvider, useTranslation } from './lib/i18n'
 import Header from './components/Header'
 import ThemeToggle from './components/ThemeToggle'
 import UploadZone from './components/UploadZone'
