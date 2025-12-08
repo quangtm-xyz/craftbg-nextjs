@@ -4,3 +4,8 @@ dist/
 .env.local
 *.log
 .DS_Store
+.next/
+out/
+.idea/
+*.tsbuildinfo
+next-env.d.ts
