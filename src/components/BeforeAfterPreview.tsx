@@ -51,8 +51,8 @@ export default function BeforeAfterPreview({ originalImage, processedImage }: Be
             width={800}
             height={600}
             unoptimized={true}
-            priority={!showOriginal}
-            className="max-w-full h-auto mx-auto rounded-lg shadow-lg transition-all duration-300"
+            priority={true}
+            className="max-w-full h-auto mx-auto rounded-lg shadow-lg transition-all duration-300 object-cover"
             style={{ maxHeight: '600px', width: 'auto', height: 'auto' }}
           />
         </div>

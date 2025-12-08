@@ -12,6 +12,12 @@ export default function LanguageSwitcher() {
   useEffect(() => {
     document.documentElement.lang = language;
     document.documentElement.dir = languages[language].dir as 'ltr' | 'rtl';
+    // Add dir-rtl class for Tailwind RTL utilities
+    if (languages[language].dir === 'rtl') {
+      document.documentElement.classList.add('dir-rtl');
+    } else {
+      document.documentElement.classList.remove('dir-rtl');
+    }
   }, [language]);
 
   useEffect(() => {
