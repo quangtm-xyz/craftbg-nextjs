@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, ReactNode } from 'react';
 
-export type Language = 'en' | 'hi' | 'id' | 'bn' | 'ur' | 'tl';
+export type Language = 'en' | 'hi' | 'id' | 'bn' | 'ur' | 'tl' | 'vi';
 
 export const languages = {
   en: { name: 'English', flag: '🇬🇧', dir: 'ltr' },
@@ -11,6 +11,7 @@ export const languages = {
   bn: { name: 'বাংলা', flag: '🇧🇩', dir: 'ltr' },
   ur: { name: 'اردو', flag: '🇵🇰', dir: 'rtl' },
   tl: { name: 'Filipino', flag: '🇵🇭', dir: 'ltr' },
+  vi: { name: 'Tiếng Việt', flag: '🇻🇳', dir: 'ltr' },
 };
 
 const translations = {
@@ -366,6 +367,65 @@ const translations = {
     'footer.link3': 'Mga Tuntunin ng Serbisyo',
     'footer.social': 'Sundan Kami',
     'footer.copyright': '© 2025 Background Remover. Ginawa gamit ang ❤️ at AI.',
+  },
+
+  vi: {
+    'header.title': 'Xóa Phông Nền',
+    'header.subtitle': 'Xóa phông nền ảnh ngay lập tức với AI - 100% Miễn phí',
+    'hero.title': 'Xóa phông nền ảnh ngay lập tức với AI – 100% Miễn phí',
+    'hero.subtitle': 'Không cần đăng ký, không có watermark, sử dụng không giới hạn ở chế độ xem trước',
+    'upload.drop': 'Thả ảnh của bạn vào đây',
+    'upload.browse': 'hoặc nhấp để duyệt',
+    'upload.processing': 'Đang xử lý...',
+    'upload.remove': 'Xóa Phông Nền',
+    'download.button': 'Tải Ảnh Xuống',
+    'preview.before': 'Trước',
+    'preview.after': 'Sau',
+    'button.tryAgain': 'Thử Lại',
+    'button.removeAnother': 'Xóa Phông Nền Khác',
+    'features.fast.title': 'Cực Kỳ Nhanh',
+    'features.fast.desc': 'Xóa phông nền trong vài giây với công nghệ AI',
+    'features.precise.title': 'Kết Quả Chính Xác',
+    'features.precise.desc': 'AI tiên tiến đảm bảo phát hiện cạnh chính xác',
+    'features.free.title': '100% Miễn Phí',
+    'features.free.desc': 'Không có watermark, không cần đăng ký',
+    'faq.title': 'Câu Hỏi Thường Gặp',
+    'faq.q1': 'Làm thế nào để xóa phông nền khỏi ảnh?',
+    'faq.a1': 'Chỉ cần kéo và thả hoặc nhấp để tải ảnh lên. AI sẽ xóa phông nền trong vài giây.',
+    'faq.q2': 'Công cụ xóa phông nền này là gì?',
+    'faq.a2': 'Công cụ sử dụng AI tự động xóa phông nền khỏi ảnh chỉ bằng một cú nhấp chuột.',
+    'faq.q3': 'Công cụ này có thực sự miễn phí không?',
+    'faq.a3': 'Có! Sử dụng không giới hạn, không cần đăng ký, không có watermark ở chế độ xem trước.',
+    'faq.q4': 'Tôi có thể tải xuống chất lượng HD không?',
+    'faq.a4': 'Có, nhấp "Tải Ảnh Xuống" để nhận PNG HD đầy đủ với phông nền trong suốt.',
+    'faq.q5': 'Làm thế nào để xử lý nhiều ảnh cùng lúc?',
+    'faq.a5': 'Hiện tại từng ảnh một, nhưng chúng tôi đang phát triển tính năng xử lý hàng loạt.',
+    'faq.q6': 'Có hỗ trợ ảnh 4K / Ultra HD không?',
+    'faq.a6': 'Có, lên đến 25 megapixel.',
+    'faq.q7': 'Tại sao đây là một trong những công cụ xóa phông nền tốt nhất?',
+    'faq.a7': 'Được hỗ trợ bởi công nghệ remove.bg – công ty dẫn đầu ngành với khả năng phát hiện tóc và cạnh hoàn hảo.',
+    'faq.q8': 'Tôi có thể sử dụng trên điện thoại không?',
+    'faq.a8': 'Có, hoàn toàn tương thích với điện thoại và máy tính bảng.',
+    'faq.q9': 'Ảnh nào hoạt động tốt nhất?',
+    'faq.a9': 'Chủ thể rõ ràng với các cạnh được xác định (người, sản phẩm, xe hơi, động vật).',
+    'faq.q10': 'Ảnh nào có thể không hoạt động tốt?',
+    'faq.a10': 'Các cạnh mờ, tóc rất phức tạp, hoặc màu chủ thể quá giống với phông nền.',
+    'faq.q11': 'Nếu kết quả không hoàn hảo thì làm gì?',
+    'faq.a11': 'Thử ảnh khác hoặc phóng to để kiểm tra chi tiết.',
+    'faq.q12': 'Tại sao phông nền trong suốt hiển thị màu đen trong một số trình chỉnh sửa?',
+    'faq.a12': 'Một số ứng dụng (như Canva) không hỗ trợ xem trước độ trong suốt. Sử dụng Photoshop, Figma, hoặc tải xuống và kiểm tra.',
+    'footer.description': 'Công cụ xóa phông nền được hỗ trợ bởi AI. Nhanh chóng, miễn phí và cực kỳ chính xác. Xóa phông nền khỏi bất kỳ ảnh nào trong vài giây.',
+    'footer.features': 'Tính Năng',
+    'footer.feature1': 'Xóa Phông Nền AI',
+    'footer.feature2': 'Tải Xuống Chất Lượng HD',
+    'footer.feature3': 'Xuất PNG Trong Suốt',
+    'footer.feature4': 'Thân Thiện Với Di Động',
+    'footer.links': 'Liên Kết',
+    'footer.link1': 'FAQ',
+    'footer.link2': 'Chính Sách Bảo Mật',
+    'footer.link3': 'Điều Khoản Dịch Vụ',
+    'footer.social': 'Theo Dõi Chúng Tôi',
+    'footer.copyright': '© 2025 Xóa Phông Nền. Được tạo ra với ❤️ và AI.',
   },
 };
 

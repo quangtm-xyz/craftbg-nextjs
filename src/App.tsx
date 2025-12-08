@@ -36,30 +36,16 @@ function AppContent() {
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
       <Header />
-      
-      {/* ADS SLOT 1 - Top Banner */}
-      <div className="max-w-7xl mx-auto px-4 py-4">
-        <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-          {/* ADS HERE */}
-          <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-        </div>
-      </div>
 
       <main className="max-w-7xl mx-auto px-4 py-8">
         {!originalImage && !isProcessing && (
           <>
-            <UploadZone 
+            <UploadZone
               setOriginalImage={setOriginalImage}
               setProcessedImage={setProcessedImage}
               setIsProcessing={setIsProcessing}
               setError={setError}
             />
-            
-            {/* ADS SLOT 2 - Below Upload */}
-            <div className="mt-8 bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-              {/* ADS HERE */}
-              <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-            </div>
           </>
         )}
 
@@ -79,19 +65,13 @@ function AppContent() {
 
         {originalImage && processedImage && !isProcessing && (
           <div className="space-y-6">
-            <BeforeAfterPreview 
+            <BeforeAfterPreview
               originalImage={originalImage}
               processedImage={processedImage}
             />
-            
-            {/* ADS SLOT 3 - Between Preview and Download */}
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-              {/* ADS HERE */}
-              <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-            </div>
 
             <DownloadButton processedImage={processedImage} />
-            
+
             <button
               onClick={handleReset}
               className="w-full py-3 px-6 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 font-semibold"
@@ -100,12 +80,6 @@ function AppContent() {
             </button>
           </div>
         )}
-
-        {/* ADS SLOT 4 - Bottom */}
-        <div className="mt-8 bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-          {/* ADS HERE */}
-          <p className="text-gray-500 dark:text-gray-400 text-sm">Advertisement Space 728x90</p>
-        </div>
 
         {/* Features Section */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
