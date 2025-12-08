@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useTranslation } from '../lib/i18n.tsx';
 
 interface BeforeAfterPreviewProps {
@@ -37,18 +38,22 @@ export default function BeforeAfterPreview({ originalImage, processedImage }: Be
 
       <div className="relative bg-gray-100 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl">
         <div
-          className="relative bg-white dark:bg-gray-900 p-8"
+          className="relative bg-white dark:bg-gray-900 p-8 min-h-[600px] flex items-center justify-center"
           style={{
             backgroundImage: 'linear-gradient(45deg, #ccc 25%, transparent 25%), linear-gradient(-45deg, #ccc 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ccc 75%), linear-gradient(-45deg, transparent 75%, #ccc 75%)',
             backgroundSize: '20px 20px',
             backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px'
           }}
         >
-          <img
+          <Image
             src={showOriginal ? originalImage : processedImage}
             alt={showOriginal ? 'Original' : 'Processed'}
+            width={800}
+            height={600}
+            unoptimized={true}
+            priority={!showOriginal}
             className="max-w-full h-auto mx-auto rounded-lg shadow-lg transition-all duration-300"
-            style={{ maxHeight: '600px' }}
+            style={{ maxHeight: '600px', width: 'auto', height: 'auto' }}
           />
         </div>
       </div>

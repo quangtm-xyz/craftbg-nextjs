@@ -1,5 +1,12 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
+
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+    weight: ['400', '500', '600', '700'],
+})
 
 export const metadata: Metadata = {
     title: 'Background Remover AI - Remove Background from Image Free 2025',
@@ -45,8 +52,10 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" dir="ltr">
+        <html lang="en" dir="ltr" className={inter.className}>
             <head>
+                <link rel="preconnect" href="https://project-bg-remover-1.onrender.com" />
+                <link rel="dns-prefetch" href="https://project-bg-remover-1.onrender.com" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
