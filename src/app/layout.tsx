@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Background Remover AI - Remove Background from Image Free 2025',
     description: 'Remove image backgrounds instantly with AI. 100% Free, HD quality, no signup required. Best background remover tool 2025.',
     verification: {
-        google: 'SH2bdh2pohTC-wTIlMZa-E2T9N6FQAYG6JK9Hvas1P0',
+        google: '6AzTJM60jDTgj_XspqhRf2jMeOVnN881jDA-weE32qI',
     },
     robots: {
         index: true,
