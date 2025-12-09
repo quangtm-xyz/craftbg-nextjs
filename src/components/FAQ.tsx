@@ -55,7 +55,7 @@ function FAQ() {
                 onClick={() => toggle(index)}
                 className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
               >
-                <span className="font-medium text-gray-900 dark:text-white pr-4">
+                <span className="font-medium text-black-600 dark:text-white pr-4">
                   {item.q}
                 </span>
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 transition-transform duration-300">
