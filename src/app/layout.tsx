@@ -48,6 +48,7 @@ export default function RootLayout({
         <html lang="en" dir="ltr">
             <head>
                 <link rel="preconnect" href="https://project-bg-remover-1.onrender.com" />
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9947496746741557" crossOrigin="anonymous"></script>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
