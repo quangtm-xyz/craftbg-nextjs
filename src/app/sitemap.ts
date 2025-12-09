@@ -3,13 +3,13 @@ import type { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
-            url: 'https://yourdomain.vercel.app/',
+            url: 'https://www.craftbg.click/',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1,
         },
         {
-            url: 'https://yourdomain.vercel.app/remove-background/',
+            url: 'https://www.craftbg.click/remove-background/',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,

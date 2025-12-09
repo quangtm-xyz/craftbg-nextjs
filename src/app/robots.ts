@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://yourdomain.vercel.app/sitemap.xml',
+        sitemap: 'https://www.craftbg.click/sitemap.xml',
     }
 }
