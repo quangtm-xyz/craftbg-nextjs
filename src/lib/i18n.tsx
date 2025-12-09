@@ -72,6 +72,11 @@ const translations = {
     'footer.link3': 'Terms of Service',
     'footer.social': 'Follow Us',
     'footer.copyright': '© 2025 Background Remover. Made with ❤️ and AI.',
+    'hero_title_1': 'Remove images background with our',
+    'hero_title_2': 'powerful AI',
+    'hero_title_3': '100% free',
+    'sample_text': 'Or try removing background with these images',
+    'privacy_text': 'By uploading an image or URL you agree to our Terms of Service. To find out more about how remove.bg handles your personal data, please see our Privacy Policy.',
   },
 
   hi: {
@@ -131,6 +136,11 @@ const translations = {
     'footer.link3': 'सेवा की शर्तें',
     'footer.social': 'हमें फॉलो करें',
     'footer.copyright': '© 2025 बैकग्राउंड रिमूवर। ❤️ और AI के साथ बनाया गया।',
+    'hero_title_1': 'हमारे साथ छवि पृष्ठभूमि हटाएं',
+    'hero_title_2': 'शक्तिशाली AI',
+    'hero_title_3': '100% मुफ़्त',
+    'sample_text': 'या इन छवियों के साथ पृष्ठभूमि हटाने का प्रयास करें',
+    'privacy_text': 'कोई छवि या URL अपलोड करके आप हमारी सेवा की शर्तों से सहमत होते हैं। यह जानने के लिए कि remove.bg आपके व्यक्तिगत डेटा को कैसे हैंडल करता है, कृपया हमारी गोपनीयता नीति देखें।',
   },
 
   id: {
@@ -190,6 +200,11 @@ const translations = {
     'footer.link3': 'Ketentuan Layanan',
     'footer.social': 'Ikuti Kami',
     'footer.copyright': '© 2025 Penghapus Latar Belakang. Dibuat dengan ❤️ dan AI.',
+    'hero_title_1': 'Hapus latar belakang gambar dengan',
+    'hero_title_2': 'AI canggih kami',
+    'hero_title_3': '100% gratis',
+    'sample_text': 'Atau coba hapus latar belakang dengan gambar-gambar ini',
+    'privacy_text': 'Dengan mengunggah gambar atau URL, Anda menyetujui Persyaratan Layanan kami. Untuk mengetahui lebih lanjut tentang cara remove.bg menangani data pribadi Anda, silakan lihat Kebijakan Privasi kami.',
   },
 
   bn: {
@@ -249,6 +264,11 @@ const translations = {
     'footer.link3': 'সেবার শর্তাবলী',
     'footer.social': 'আমাদের অনুসরণ করুন',
     'footer.copyright': '© 2025 ব্যাকগ্রাউন্ড রিমুভার। ❤️ এবং AI দিয়ে তৈরি।',
+    'hero_title_1': 'আমাদের সাথে ছবির ব্যাকগ্রাউন্ড সরান',
+    'hero_title_2': 'শক্তিশালী AI',
+    'hero_title_3': '১০০% বিনামূল্যে',
+    'sample_text': 'অথবা এই ছবিগুলো দিয়ে ব্যাকগ্রাউন্ড মুছে দেখুন',
+    'privacy_text': 'একটি ছবি বা URL আপলোড করে আপনি আমাদের পরিষেবার শর্তাবলীতে সম্মত হন। remove.bg কীভাবে আপনার ব্যক্তিগত ডেটা পরিচালনা করে তা জানতে, আমাদের গোপনীয়তা নীতি দেখুন।',
   },
 
   ur: {
@@ -308,6 +328,11 @@ const translations = {
     'footer.link3': 'سروس کی شرائط',
     'footer.social': 'ہمیں فالو کریں',
     'footer.copyright': '© 2025 بیک گراؤنڈ ہٹانے والا۔ ❤️ اور AI کے ساتھ بنایا گیا۔',
+    'hero_title_1': 'ہمارے ساتھ تصاویر کا بیک گراؤنڈ ہٹائیں',
+    'hero_title_2': 'طاقتور AI',
+    'hero_title_3': '100% مفت',
+    'sample_text': 'یا ان تصاویر کے ساتھ بیک گراؤنڈ ہٹانے کی کوشش کریں',
+    'privacy_text': 'ایک تصویر یا URL اپ لوڈ کر کے آپ ہماری سروس کی شرائط سے اتفاق کرتے ہیں۔ یہ جاننے کے لیے کہ remove.bg آپ کے ذاتی ڈیٹا کو کیسے ہینڈل کرتا ہے، براہ کرم ہماری پرائیویسی پالیسی دیکھیں۔',
   },
 
   tl: {
@@ -367,6 +392,11 @@ const translations = {
     'footer.link3': 'Mga Tuntunin ng Serbisyo',
     'footer.social': 'Sundan Kami',
     'footer.copyright': '© 2025 Background Remover. Ginawa gamit ang ❤️ at AI.',
+    'hero_title_1': 'Alisin ang background ng mga larawan sa amin',
+    'hero_title_2': 'makapangyarihang AI',
+    'hero_title_3': '100% libre',
+    'sample_text': 'O subukan alisin ang background sa mga larawang ito',
+    'privacy_text': 'Sa pag-upload ng larawan o URL, sumasang-ayon ka sa aming Mga Tuntunin ng Serbisyo. Upang malaman ang higit pa kung paano hinahawakan ng remove.bg ang iyong personal na data, mangyaring tingnan ang aming Patakaran sa Privacy.',
   },
 
   vi: {
@@ -426,6 +456,11 @@ const translations = {
     'footer.link3': 'Điều Khoản Dịch Vụ',
     'footer.social': 'Theo Dõi Chúng Tôi',
     'footer.copyright': '© 2025 Xóa Phông Nền. Được tạo ra với ❤️ và AI.',
+    'hero_title_1': 'Xóa nền ảnh chỉ trong 1 cú nhấp',
+    'hero_title_2': 'bằng công nghệ AI mạnh mẽ',
+    'hero_title_3': '100% miễn phí',
+    'sample_text': 'Hoặc thử xóa nền với những ảnh này',
+    'privacy_text': 'Khi tải lên một hình ảnh hoặc URL tức là bạn đồng ý với Điều khoản dịch vụ của chúng tôi. Để tìm hiểu thêm về cách remove.bg xử lý dữ liệu cá nhân của bạn, hãy xem Chính sách quyền riêng tư của chúng tôi.',
   },
 };
 
