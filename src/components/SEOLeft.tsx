@@ -1,17 +1,14 @@
 'use client'
 
 import { useTranslation } from '../lib/i18n'
+import BeforeAfterToggle from './BeforeAfterToggle'
 
 export default function SEOLeft() {
     const { t } = useTranslation()
 
     return (
         <div className="flex flex-col items-center justify-center">
-            <img
-                src="/image_uploadzone.jpg"
-                alt="AI background remover illustration"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-xl"
-            />
+            <BeforeAfterToggle />
             <h1 className="mt-8 text-5xl md:text-6xl font-black leading-tight text-center">
                 {t("hero_title_1")}<br />
                 <span className="text-primary">{t("hero_title_2")}</span><br />
