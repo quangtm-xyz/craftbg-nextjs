@@ -11,8 +11,13 @@ type BlogPost = {
 
 type Language = 'en' | 'vi' | 'hi' | 'id' | 'bn' | 'ur' | 'tl'
 
+function slugify(text: string): string {
+    return text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '')
+}
+
 export default function BlogCard({ post, lang }: { post: BlogPost; lang: Language }) {
-    const blogUrl = lang === 'en' ? `/blog/${post.slug}` : `/${lang}/blog/${post.slug}`
+    const categorySlug = slugify(post.category)
+    const blogUrl = `/${lang}/blog/${categorySlug}/${post.slug}`
 
     return (
         <a href={blogUrl}>

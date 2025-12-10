@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import blogPosts from '../../public/data/blog-posts.json'
 import BlogCard from './BlogCard'
 
@@ -8,6 +8,16 @@ type Language = 'en' | 'vi' | 'hi' | 'id' | 'bn' | 'ur' | 'tl'
 
 export default function BlogContent({ lang }: { lang: Language }) {
     const [selectedCategory, setSelectedCategory] = useState<string>('All')
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const storedCategory = sessionStorage.getItem('selectedBlogCategory')
+            if (storedCategory) {
+                setSelectedCategory(storedCategory)
+                sessionStorage.removeItem('selectedBlogCategory')
+            }
+        }
+    }, [])
 
     const allCategories = useMemo(() => {
         const categories = new Set<string>()

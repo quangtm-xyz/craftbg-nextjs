@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import './blog-content.css'
 
 export default function RootLayout({
     children,
