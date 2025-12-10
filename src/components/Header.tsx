@@ -1,10 +1,13 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { useTranslation, languages, Language } from '../lib/i18n';
 
 export default function Header() {
   const { language, setLanguage } = useTranslation();
+  const router = useRouter();
+  const pathname = usePathname();
   const [toolsOpen, setToolsOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
@@ -52,6 +55,27 @@ export default function Header() {
   const handleLanguageChange = (lang: Language) => {
     setLanguage(lang);
     setLangOpen(false);
+
+    // Navigate to the new language URL
+    const currentPath = pathname || '/en';
+    const segments = currentPath.split('/').filter(Boolean);
+
+    // Check if first segment is a language code
+    const currentLang = segments[0];
+    const isLangSegment = Object.keys(languages).includes(currentLang);
+
+    // Build new path
+    let newPath;
+    if (isLangSegment) {
+      // Replace current language with new language
+      segments[0] = lang;
+      newPath = '/' + segments.join('/');
+    } else {
+      // Prepend new language
+      newPath = '/' + lang + (currentPath === '/' ? '' : currentPath);
+    }
+
+    router.push(newPath);
   };
 
   const tools = [
