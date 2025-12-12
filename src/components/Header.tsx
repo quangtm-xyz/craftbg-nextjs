@@ -17,7 +17,16 @@ export default function Header() {
   useEffect(() => {
     const dark = document.documentElement.classList.contains('dark');
     setIsDark(dark);
-  }, []);
+
+    // Sync language with URL pathname
+    if (pathname) {
+      const segments = pathname.split('/').filter(Boolean);
+      const urlLang = segments[0] as Language;
+      if (Object.keys(languages).includes(urlLang) && urlLang !== language) {
+        setLanguage(urlLang);
+      }
+    }
+  }, [pathname]);
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -154,7 +163,6 @@ export default function Header() {
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                onMouseEnter={() => window.innerWidth >= 768 && setLangOpen(true)}
                 className="flex items-center gap-2 px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
               >
                 <span className="text-base">{languages[language].flag}</span>
