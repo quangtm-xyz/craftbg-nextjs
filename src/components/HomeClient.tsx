@@ -58,6 +58,10 @@ export default function HomeClient() {
                         setError={setError}
                     />
 
+                    <p className="mt-4 text-center text-gray-600 dark:text-gray-400 text-sm">
+                        💡 {t("upload.help_message")}
+                    </p>
+
                     <p className="mt-10 text-center text-gray-700 dark:text-gray-300 font-medium">{t("sample_text")}</p>
 
                     <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6">
